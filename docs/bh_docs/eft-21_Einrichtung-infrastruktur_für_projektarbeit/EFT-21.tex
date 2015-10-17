@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{dirtree}
+\usepackage[]{algorithm2e}
 \usepackage{ngerman}
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2cm},bmargin={2.5cm}]{geometry}
                    
@@ -19,10 +20,12 @@ ausgestattet
 \emph{EFT-11}
 
 \section{Einrichten eines Atlassian-JIRA-Projekts}
+Die A. IT-Beratung arbeitet mit agilen Methoden im Projektmanagement an der wir uns orientieren. Zur Unterstützung dieses Managements verwendet das Unternehmen u.a. das Ticket-System \footnote{\label{foot:1}https://de.atlassian.com/software/jira}JIRA von Atlassian. Dieses Projekt wird ebenfalls mit dieser Lösung unterstützt. Da die Einrichtung der JIRA-Software auf Grund der bereits bestehenden Infrastruktur sich erübrigte, war es lediglich notwendig ein neues Projekt anzulegen und die entsprechenden Privilegien für Projektteilnehmer zu vergeben, sowie einige Konfigurationen bzgl. Benachrichtigungen über Vorgang-Workflow-Events vorzunehmen. 
 
 \section{Einrichtung einer Latex-IDE (Texmaker)}
 Es gibt viele LaTeX-Editoren und IDEs. Im Folgenden wird beschrieben was bei der Einrichtung des \footnote{\label{foot:2}http://www.xm1math.net/texmaker/}Texmaker-IDE zu beachten und vorzugehen ist. Als erstes wird der Texmaker von der offiziellen \footnote{\label{foot:3}http://www.xm1math.net/texmaker/download.html}Homepage heruntergeladen. Die IDE wird für diverse Windows und Linux - Derivate unterstützt. Nach der Installation wird je nach dem, welches Betriebssystem verwendet wird die entsprechende Tex Software geladen und installiert. Unter Windows die MiKTeX-Distribution, unter Linux die TexLive-Distribution. 
-Nun ist es bereits möglich .tex-Dateien in gutaussehende PDFs zu konvertieren. Beim arbeiten an größeren Projekte wird allerdings schnell klar, dass eine Rechtschreibkorrektur mehr als hilfreich ist. Standardmäßig ist nur die englische Bibliothek eingebunden. Das \footnote{\label{foot:4}http://sourceforge.net/projects/germandict/files/}deutsche Wörterbuch kann über \emph{Optionen > Texmaker konfigurieren > Editor} eingebunden werden. Ab diesem Zeitpunkt kann die LaTex-Umgebung als tatsächlicher Office-Word-Ersatz angesehen werden.   
+Nun ist es bereits möglich .tex-Dateien in gutaussehende PDFs zu konvertieren. Beim arbeiten an größeren Projekte wird allerdings schnell klar, dass eine Rechtschreibkorrektur mehr als hilfreich ist. Standardmäßig ist nur die englische Bibliothek eingebunden. Das \footnote{\label{foot:4}http://sourceforge.net/projects/germandict/files/}deutsche Wörterbuch kann über \emph{Optionen > Texmaker konfigurieren > Editor} eingebunden werden. Ab diesem Zeitpunkt kann die LaTex-Umgebung als tatsächlicher Office-Word-Ersatz angesehen werden. 
+Unter Linux-Plattformen sollte das Packet \emph{texlive-full} installiert werden, da sonst wichtige Packete wie z.B. \emph{dirtree.sty} fehlen und manuell nachinstalliert werden müssen. 
 
 \section{Integrationen in Slack}
 Das Filesharing, das zum einen die Bereitstellung von Tools und Quellcodes, vorwiegend Bogofilter betreffend, den Projektteilnehmern zur Verfügung stellt. Die zweite Hauptaufgabe, die kollaborative schriftliche Ausarbeitung wird von diesem Repository unterstützt. Durch die Versionierungsfunktion von Github kann versehentliches Löschen verhindert werden, sowie ist die Entwicklungshistorie nachvollziehbar.
@@ -48,6 +51,9 @@ Die Hauptaufgabengebiete des Repositorys spiegeln sich in der Ordnerstruktur wie
 .4 collection.
 .3 rf\_docs.
 .4 collection.
+.3 req\_for\_texmaker.
+.4 example\_template.tex.
+.2 collection.
 .2 bogofilter\_repos.
 .2 java\_application.
 .2 knowledge\_resources.
@@ -59,7 +65,35 @@ Die Hauptaufgabengebiete des Repositorys spiegeln sich in der Ordnerstruktur wie
 
 
 \section{Bestpratice - Algorithmus}
+Das Arbeiten mit Softwaretools im Projektmanagement ist heutzutage nicht mehr wegzudenken. Gerade dann, wenn wie in diesem Projekt versucht wird möglichst viele Projektverantworlichkeiten über zentrale Schnittstellen abzuwickeln, erscheint es sinnvoll einen Abarbeitungsalgorithmus zu entwerfen, der durch die hohe Integrationsdichte hohe Erfolgschancen verspricht, in der realen Projektarbeit eingehalten zu werden.\\ 
 
+\begin{algorithm}[H]
+\KwData{Vorgang -- EFT--XY}
+ \KwResult{Vorgang -- EFT--XY erledigt}
+  \eIf{Vorgang -- EFT--XY -- nicht begonnen}{
+   Vorgang beginnen\;
+   LaTeX-Projekt anhand vordefinierter Ordnerstruktur anlegen\;
+   Initial-Markup-Text aus \emph{docs\textbackslash example\_template} in generierte \emph{tex--Datei} kopieren\;   
+   }{
+   LaTeX-Projekt anhand vordefinierter Ordnerstruktur öffnen\;
+  } 
+  \While{Vorgang -- EFT--XY offen}
+  {
+   \While {Kein Blocker} {
+   Schriftliche Ausarbeitung durchführen\;
+   \eIf {Vorgang -- EFT--XY erledigt} {
+  	  \Return Vorgang -- EFT--XY erledigt\;
+     } {}  
+  }
+  \While {Blocker} {
+	Nach Lösung suchen\;  
+	\eIf {Lösungsdauer wird überschritten} {
+	  \Return Vorgang an Kollege übertragen\;
+	} {}
+  }
+}    
+\caption{Bestpractice - Vorgangsabarbeitung}
+\end{algorithm}
 
 
 \begin{thebibliography}{}
