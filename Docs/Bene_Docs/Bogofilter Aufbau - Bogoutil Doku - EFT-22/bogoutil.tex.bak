@@ -1,16 +1,15 @@
 \documentclass{article}
 
 \usepackage[T1]{fontenc} 
-\usepackage[utf8]{inputenc}
 \usepackage{ngerman}
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2cm},bmargin={2.5cm}]{geometry}
                    
 \begin{document}
-\title{Titel}
-\author{Max Mustermann}
+\title{Bogoutil}
+\author{Benedikt Hofrichter}
 \maketitle
 
-\section{Die Thematiken von XYZ}
+\section{Bogoutil}
 
 
 \begin{itemize}
