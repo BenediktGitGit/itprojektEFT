@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{dirtree}
+\usepackage{ngerman}
+\usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2cm},bmargin={2.5cm}]{geometry}
+                   
+\begin{document}
+\title{Einrichtung - Infrastruktur für Projektarbeit}
+\author{Benedikt Hofrichter, Simon Litak}
+\maketitle
+
+\section{Einrichten einer Teamkommunikationslösung}
+ausgestattet
+\emph{EFT-11}
+
+\section{Einrichten eines Atlassian-JIRA-Projekts}
+
+\section{Einrichtung einer Latex-IDE (Texmaker)}
+Es gibt viele LaTeX-Editoren und IDEs. Im Folgenden wird beschrieben was bei der Einrichtung des \footnote{\label{foot:2}http://www.xm1math.net/texmaker/}Texmaker-IDE zu beachten und vorzugehen ist. Als erstes wird der Texmaker von der offiziellen \footnote{\label{foot:3}http://www.xm1math.net/texmaker/download.html}Homepage heruntergeladen. Die IDE wird für diverse Windows und Linux - Derivate unterstützt. Nach der Installation wird je nach dem, welches Betriebssystem verwendet wird die entsprechende Tex Software geladen und installiert. Unter Windows die MiKTeX-Distribution, unter Linux die TexLive-Distribution. 
+Nun ist es bereits möglich .tex-Dateien in gutaussehende PDFs zu konvertieren. Beim arbeiten an größeren Projekte wird allerdings schnell klar, dass eine Rechtschreibkorrektur mehr als hilfreich ist. Standardmäßig ist nur die englische Bibliothek eingebunden. Das \footnote{\label{foot:4}http://sourceforge.net/projects/germandict/files/}deutsche Wörterbuch kann über \emph{Optionen > Texmaker konfigurieren > Editor} eingebunden werden. Ab diesem Zeitpunkt kann die LaTex-Umgebung als tatsächlicher Office-Word-Ersatz angesehen werden.   
+
+\section{Integrationen in Slack}
+Das Filesharing, das zum einen die Bereitstellung von Tools und Quellcodes, vorwiegend Bogofilter betreffend, den Projektteilnehmern zur Verfügung stellt. Die zweite Hauptaufgabe, die kollaborative schriftliche Ausarbeitung wird von diesem Repository unterstützt. Durch die Versionierungsfunktion von Github kann versehentliches Löschen verhindert werden, sowie ist die Entwicklungshistorie nachvollziehbar.
+
+\section{Integration eines Kanban-Boards in Atlassian-JIRA}
+Die JIRA-Version ist mit der der Erweiterung \emph{Agile} ausgestattet. 
+Diese ermöglicht das aufsetzen von Scrum- oder Kanban-Boards. Wir haben uns für ein Kanban-Board entschieden da ... 
+
+
+\subsection{Ordnerstruktur aufbauen}
+Die Hauptaufgabengebiete des Repositorys spiegeln sich in der Ordnerstruktur wieder.
+
+\DTsetlength{0.2em}{3em}{0.2em}{0.4pt}{2.6pt}
+\dirtree{%
+.1 /.
+.2 docs.
+.3 bh\_docs.
+.4 eft--21\_einrichtung--infrastruktur\_für\_projektarbeit.
+.4 eft-- ....
+.4 collection.
+.3 sl\_docs.
+.4 eft--11\_findung\_einer\_teamkommunikationslösung.
+.4 collection.
+.3 rf\_docs.
+.4 collection.
+.2 bogofilter\_repos.
+.2 java\_application.
+.2 knowledge\_resources.
+}
+
+
+\section{Integration von Github in Slack}
+\emph{EFT-27}
+
+
+\section{Bestpratice - Algorithmus}
+
+
+
+\begin{thebibliography}{}
+
+\end{thebibliography}
+
+\end{document}
