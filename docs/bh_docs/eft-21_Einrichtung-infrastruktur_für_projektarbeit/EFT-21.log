@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.17)  17 OCT 2015 23:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.17)  17 OCT 2015 23:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,25 +587,24 @@ Overfull \hbox (6.92084pt too wide) in paragraph at lines 26--29
 wird der Tex-ma-ker von der of-fi-zi-el-len []Homepage
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 60.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 57.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-[2]
 
-LaTeX Warning: Empty `thebibliography' environment on input line 101.
+LaTeX Warning: Empty `thebibliography' environment on input line 98.
 
-[3] (./EFT-21.aux) ) 
+[2] (./EFT-21.aux) ) 
 Here is how much of TeX's memory you used:
  4692 strings out of 493304
  63200 string characters out of 6139870
- 157899 words of memory out of 5000000
+ 156899 words of memory out of 5000000
  8061 multiletter control sequences out of 15000+600000
  60762 words of font info for 46 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -618,10 +617,10 @@ fb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmtt10.pfb>
-Output written on EFT-21.pdf (3 pages, 250390 bytes).
+Output written on EFT-21.pdf (2 pages, 249190 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
